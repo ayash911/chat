@@ -5,6 +5,11 @@ const messagesContainer = document.getElementById("messages");
 const logoutButton = document.getElementById("logoutButton");
 const onlineUsersContainer = document.getElementById("online-users");
 const activeUsers = document.getElementById("active-users");
+const express = require("express");
+const cors = require("cors");
+const app = express();
+app.use(cors({ origin: "https://ayash911.github.io" }));
+
 const userDetailsList = document.getElementById("user-details");
 let groupName = "Group Chat";
 
